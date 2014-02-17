@@ -28,7 +28,7 @@ ul {width:840px;}
 </div><!-- .content #hello -->
 <?php $img01 = array('jay-peg-landscape.jpg','gif-landscape.gif','ping-landscape.png'); ?>
 <div class="content" id="box2" style="display:none;">
-  <h1>web graphics for you</h1>
+  <h1>transparency</h1>
   <div class="text">
     <p>For instance, I can&rsquo;t do transparency; Gif can do it poorly; and Ping does it perfectly.</p>
   </div>
@@ -90,12 +90,30 @@ ul {width:840px;}
     <p>Gif beats Ping and I by actually throwing out colors she&rsquo;s not using. In this case, all but 16 colors were discarded.</p>
   </div>
 </div><!-- .content #vectorArt -->
+<?php $img05 = array('gov-usda-xl.jpg','gov-usda-xl.gif','gov-usda-xl.png'); ?>
+<div class="content" id="box6" style="display:none;">
+  <h1>new box</h1>
+  <div class="text">
+    <p>One thing you shouldn&rsquo;t do with an image is words. Search engines are your bullhorn on the Web. Search engines read text. So, if you put your words inside an image, it&rsquo;s just like you&rsquo;re whispering.</p>
+    <p>Also, by putting words in an image, you no longer have a good image choice. I will put artifacts around the edges of your type unless you turn off most or all of my compression, losing the cost savings I usually bring. Gif displays text well, provided you stay within her limitations (no more than 256 colors). And Ping can do text well, but he&rsquo;s expensive.</p>
+  </div>
+  <ul class="images">
+    <li class="image jpg"><?php iDims($img05[0]); iSize($img05[0]);?></li>
+    <li class="image gif"><?php iDims($img05[1]); iSize($img05[1]);?></li>
+    <li class="image png"><?php iDims($img05[2]); iSize($img05[2]);?></li>
+    <p class="caption"></p>
+  </ul>
+  <div class="text">
+    <p>Gif beats Ping and I by actually throwing out colors she&rsquo;s not using. In this case, all but 16 colors were discarded.</p>
+  </div>
+</div><!-- .content #vectorArt -->
 <button class="arrow" id="dec">&lt;</button>
 <button class="arrow" id="inc">&gt;</button>
 <script type="text/javascript">
+var numDivs = $('.content').length
 var incValue = 1;
 $( "#inc" ).click(function() {
-  if (incValue < 5) {
+  if (incValue < numDivs) {
     $( "#box" + incValue ).hide( "slow" );
     incValue++;
     $( "#box" + incValue ).show( "slow" );
