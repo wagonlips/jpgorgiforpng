@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
   <style type="text/css">
   .ui-content {max-width:760px;margin:0 auto;}
-  .images {display:inline;width:244px;height:136px;}
-  .caption {width:inherit;height:20px;}
+  .images {position:relative;display:inline;width:244px;height:150px;}
+  .imageBox {width:750px;height:180px;padding:0;}
+  .caption {position:absolute;left:0px;top:20px;}
   </style>
   <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
@@ -24,11 +25,11 @@
   <div data-role="content" >    
     <p>Hi, my name is Jay Peg. I&rsquo;m a Web graphic and these are my friends Gif and Ping.</p>
     <p>We can help your website look great, but you should know what our strengths and weaknesses are first.</p>
-    <div class="imageBox">
-      <div class="images"><?php iDims($img00[0]); iSize($img00[0]);?></div>
-      <div class="images"><?php iDims($img00[1]); iSize($img00[1]);?></div>
-      <div class="images"><?php iDims($img00[2]); iSize($img00[2]);?></div>
-    </div>
+    <ul class="imageBox">
+      <li class="images"><?php iDims($img00[0]); iSize($img00[0]);?></li>
+      <li class="images"><?php iDims($img00[1]); iSize($img00[1]);?></li>
+      <li class="images"><?php iDims($img00[2]); iSize($img00[2]);?></li>
+    </ul>
     <p><a href="#two" data-role="button">Show page "two"</a></p>        
   </div><!-- /content -->
   <div data-role="footer" data-theme="d">
