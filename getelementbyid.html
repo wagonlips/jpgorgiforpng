@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>getElementById example</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js"></script>
+</head>
+<body>
+  <p id="para1">Some text here</p>
+  <p class="text">Some text here</p>
+  <p class="text">Some text here</p>
+  <p class="text">Some text here</p>
+  <button onclick="changeColor('blue');">blue</button>
+  <button onclick="changeColor('red');">red</button>
+  <button onclick="alert(numItems);">alert</button>
+  <script>
+  var numItems = $('.text').length
+  </script>
+</body>
+</html>

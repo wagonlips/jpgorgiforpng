@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>web graphics for you</title> 
+  <?php include '/var/www/jpgorgiforpng/html/includes/funcs.php'; ?>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <style type="text/css">
+  .ui-content {max-width:600px;margin:0 auto;}
+  </style>
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head> 
+<body> 
+<!-- Page -->
+<?php $img00 = array('jay-peg-landscape.jpg','gif-landscape.gif','ping-landscape.png'); ?>
+<div data-role="page" id="one">
+  <div data-role="header">
+    <h1>Hi, I'm Jay.</h1>
+  </div><!-- /header -->
+  <div data-role="content" >    
+    <p>Hi, my name is Jay Peg. I&rsquo;m a Web graphic and these are my friends Gif and Ping.</p>
+    <p>We can help your website look great, but you should know what our strengths and weaknesses are first.</p>
+    <ul class="images">
+      <li class="image jpg"><?php iDims($img00[0]); iSize($img00[0]);?></li>
+      <li class="image gif"><?php iDims($img00[1]); iSize($img00[1]);?></li>
+      <li class="image png"><?php iDims($img00[2]); iSize($img00[2]);?></li>
+    </ul>
+    <p><a href="#two" data-role="button">Show page "two"</a></p>        
+  </div><!-- /content -->
+  <div data-role="footer" data-theme="d">
+    <h4>Page Footer</h4>
+  </div><!-- /footer -->
+</div><!-- /page -->
+<?php $img01 = array('jay-peg-landscape.jpg','gif-landscape.gif','ping-landscape.png'); ?>
+<!-- Page -->
+<div data-role="page" id="two">
+  <div data-role="header">
+    <h1>Transparency</h1>
+  </div><!-- /header -->
+  <div data-role="content">      
+    <p>For instance, I can&rsquo;t do transparency; Gif can do it poorly; and Ping does it perfectly.</p>
+    <ul class="images">
+      <li class="image jpg"><?php iDims($img01[0]); iSize($img01[0]);?></li>
+      <li class="image gif"><?php iDims($img01[1]); iSize($img01[1]);?></li>
+      <li class="image png"><?php iDims($img01[2]); iSize($img01[2]);?></li>
+    </ul>
+    <p><a href="#one" data-direction="reverse" data-role="button">Back to page "one"</a></p>     
+  </div><!-- /content -->
+  <div data-role="footer" data-theme="d">
+    <h4>Page Footer</h4>
+  </div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

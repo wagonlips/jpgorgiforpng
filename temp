@@ -1,0 +1,115 @@
+<!-- Start of first page -->
+<div data-role="page" id="hello">
+<?php $img00 = array('jay-peg-landscape.jpg','gif-landscape.gif','ping-landscape.png'); ?>
+  <div data-role="header">
+    <h1>web graphics for you</h1>
+  </div><!-- /header -->
+
+  <div role="main" class="ui-content">
+    <p>Hi, my name is Jay Peg. I&rsquo;m a Web graphic and these are my friends Gif and Ping.</p>
+    <p>We can help your website look great, but you should know what our strengths and weaknesses are first.</p>
+    <ul class="images">
+      <li class="image jpg"><?php iDims($img00[0]); iSize($img00[0]);?></li>
+      <li class="image gif"><?php iDims($img00[1]); iSize($img00[1]);?></li>
+      <li class="image png"><?php iDims($img00[2]); iSize($img00[2]);?></li>
+    </ul>
+  </div><!-- /content -->
+
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="transparency">
+<?php $img01 = array('jay-peg-landscape.jpg','gif-landscape.gif','ping-landscape.png'); ?>
+  <div data-role="header">
+    <h1>Bar</h1>
+  </div><!-- /header -->
+
+  <div role="main" class="ui-content">
+    <p>For instance, I can&rsquo;t do transparency; Gif can do it poorly; and Ping does it perfectly.</p>
+    <ul class="images">
+      <li class="image jpg"><?php iDims($img01[0]); iSize($img01[0]);?></li>
+      <li class="image gif"><?php iDims($img01[1]); iSize($img01[1]);?></li>
+      <li class="image png"><?php iDims($img01[2]); iSize($img01[2]);?></li>
+    </ul>
+  </div><!-- /content -->
+
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of third page -->
+<div data-role="page" id="photoart">
+<?php $img02 = array('photo-landscape.jpg','photo-landscape.gif','photo-landscape.png'); ?>
+  <div data-role="header">
+    <h1>Bar</h1>
+  </div><!-- /header -->
+
+  <div role="main" class="ui-content">
+    <p>If you want to display a photo, I&rsquo;m probably your best choice. That&rsquo;s because I can render millions of colors and show a reasonably sharp image more cheaply than my friends Gif and Ping. I can also employ <a href="https://en.wikipedia.org/wiki/Lossy_compression">lossy compression</a>, something my friends can&rsquo;t do.</p>
+    <p>As you can see, I&rsquo;m the lightest graphic. Your visitors will be able to download me faster than my friends. Also, Gif looks terrible because she can&rsquo;t do as many colors. Ping can also do millions of colors, but at a much greater cost.</p>
+    <ul class="images">
+      <li class="image jpg"><?php iDims($img02[0]); iSize($img02[0]);?></li>
+      <li class="image gif"><?php iDims($img02[1]); iSize($img02[1]);?></li>
+      <li class="image png"><?php iDims($img02[2]); iSize($img02[2]);?></li>
+    </ul>
+  </div><!-- /content -->
+
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of fourth page -->
+<div data-role="page" id="vectorart">
+<?php $img03 = array('gov-usda-xl.jpg','gov-usda-xl.gif','gov-usda-xl.png'); ?>
+  <div data-role="header">
+    <h1>Bar</h1>
+  </div><!-- /header -->
+
+  <div role="main" class="ui-content">
+    <p>Why not use me for everything? Because I&rsquo;m actually very bad at some things that my friends do very well.</p>
+    <p>For graphics with fewer than 256 colors, particularly ones created in a vector art program like <a href="http://inkscape.org/en/">Inkscape</a>, Gif works best. She&rsquo;s more lightweight than me and has cleaner edges.</p>
+  </div><!-- /content -->
+
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of fifth page -->
+<div data-role="page" id="transparency">
+<?php $img01 = array('jay-peg-landscape.jpg','gif-landscape.gif','ping-landscape.png'); ?>
+  <div data-role="header">
+    <h1>Bar</h1>
+  </div><!-- /header -->
+
+  <div role="main" class="ui-content">
+    <p></p>
+    <p></p>
+  </div><!-- /content -->
+
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of sixth page -->
+<div data-role="page" id="transparency">
+<?php $img01 = array('jay-peg-landscape.jpg','gif-landscape.gif','ping-landscape.png'); ?>
+  <div data-role="header">
+    <h1>Bar</h1>
+  </div><!-- /header -->
+
+  <div role="main" class="ui-content">
+    <p></p>
+    <p></p>
+  </div><!-- /content -->
+
+  <div data-role="footer">
+    <h4>Page Footer</h4>
+  </div><!-- /footer -->
+</div><!-- /page -->
