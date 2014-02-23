@@ -8,16 +8,26 @@
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
   <style type="text/css">
   .ui-content {max-width:760px;margin:0 auto;}
-  .images {position:relative;display:inline;width:244px;height:150px;}
-  .imageBox {width:750px;height:180px;padding:0;}
-  .caption {position:absolute;left:0px;top:20px;}
+  .images { 
+    float:left;
+    width:370px;height:150px;
+    border:1px solid red;
+    position:relative;
+   }
+  .imageBox {
+    width:750px;padding:0;
+    border:1px solid green;
+   }
+  .caption {position:absolute;left:0px;top:120px;}
+  .navBox {clear:both;}
+  .navBox.double p {width:45%;float:left;padding-right:38px;}
   </style>
   <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
 </head> 
 <body> 
 <!-- Page -->
-<?php $img00 = array('jay-peg-landscape.jpg','gif-landscape.gif','ping-landscape.png'); ?>
+<?php $img00 = array('jay-peg-landscape.jpg','gif-landscape.gif','ping-landscape.png','ping-landscape-fs8.png'); ?>
 <div data-role="page" id="one">
   <div data-role="header">
     <h1>Hi, I'm Jay.</h1>
@@ -25,12 +35,15 @@
   <div data-role="content" >    
     <p>Hi, my name is Jay Peg. I&rsquo;m a Web graphic and these are my friends Gif and Ping.</p>
     <p>We can help your website look great, but you should know what our strengths and weaknesses are first.</p>
-    <ul class="imageBox">
-      <li class="images"><?php iDims($img00[0]); iSize($img00[0]);?></li>
-      <li class="images"><?php iDims($img00[1]); iSize($img00[1]);?></li>
-      <li class="images"><?php iDims($img00[2]); iSize($img00[2]);?></li>
-    </ul>
-    <p><a href="#two" data-role="button">Show page "two"</a></p>        
+    <div class="imageBox">
+      <div class="images jpg"><?php iDims($img00[0]); iSize($img00[0]);?></div>
+      <div class="images gif"><?php iDims($img00[1]); iSize($img00[1]);?></div>
+      <div class="images png"><?php iDims($img00[2]); iSize($img00[2]);?></div>
+      <div class="images png"><?php iDims($img00[3]); iSize($img00[3]);?></div>
+    </div>
+    <div class="navBox">
+      <p><a href="#two" data-role="button">Show page "two"</a></p>        
+    </div>
   </div><!-- /content -->
   <div data-role="footer" data-theme="d">
     <h4>Page Footer</h4>
@@ -44,13 +57,15 @@
   </div><!-- /header -->
   <div data-role="content">      
     <p>For instance, I can&rsquo;t do transparency, Gif can do it in a limited way, and Ping pretty much nails it.</p>
-    <ul class="imageBox">
-      <li class="images jpg"><?php iDims($img01[0]); iSize($img01[0]);?></li>
-      <li class="images gif"><?php iDims($img01[1]); iSize($img01[1]);?></li>
-      <li class="images png"><?php iDims($img01[2]); iSize($img01[2]);?></li>
-    </ul>
-    <p><a href="#one" data-direction="reverse" data-role="button">Back to page "one"</a></p>     
-    <p><a href="#three" data-role="button">Show page "three"</a></p>     
+    <div class="imageBox">
+      <div class="images jpg"><?php iDims($img01[0]); iSize($img01[0]);?></div>
+      <div class="images gif"><?php iDims($img01[1]); iSize($img01[1]);?></div>
+      <div class="images png"><?php iDims($img01[2]); iSize($img01[2]);?></div>
+    </div>
+    <div class="navBox double">
+      <p><a href="#one" data-direction="reverse" data-role="button">Back to page "one"</a></p>     
+      <p><a href="#three" data-role="button">Show page "three"</a></p>     
+    </div>
   </div><!-- /content -->
   <div data-role="footer" data-theme="d">
     <h4>Page Footer</h4>
@@ -70,8 +85,10 @@
       <li class="images gif"><?php iDims($img02[1]); iSize($img02[1]);?></li>
       <li class="images png"><?php iDims($img02[2]); iSize($img02[2]);?></li>
     </ul>
-    <p><a href="#two" data-direction="reverse" data-role="button">Back to page "two"</a></p>     
-    <p><a href="#four" data-role="button">Show page "four"</a></p>        
+    <div class="navBox double">
+      <p><a href="#two" data-direction="reverse" data-role="button">Back to page "two"</a></p>     
+      <p><a href="#four" data-role="button">Show page "four"</a></p>        
+    </div>
   </div><!-- /content -->
   <div data-role="footer" data-theme="d">
     <h4>Page Footer</h4>
@@ -91,8 +108,10 @@
       <li class="images png"><?php iDims($img03[2]); iSize($img03[2]);?></li>
     </ul>
     <p>Gif&rsquo;s very tidy. She throws out colors she&rsquo;s not using. In this case, all but 16 colors were discarded.</p>
-    <p><a href="#three" data-direction="reverse" data-role="button">Back to page "three"</a></p>     
-    <p><a href="#five" data-role="button">Show page "five"</a></p>        
+    <div class="navBox double">
+      <p><a href="#three" data-direction="reverse" data-role="button">Back to page "three"</a></p>     
+      <p><a href="#five" data-role="button">Show page "five"</a></p>        
+    </div>
   </div><!-- /content -->
   <div data-role="footer" data-theme="d">
     <h4>Page Footer</h4>
@@ -112,8 +131,10 @@
       <li class="images gif"><?php iDims($img04[1]); iSize($img04[1]);?></li>
       <li class="images png"><?php iDims($img04[2]); iSize($img04[2]);?></li>
     </ul>
-    <p><a href="#four" data-direction="reverse" data-role="button">Back to page "four"</a></p>     
-    <p><a href="#six" data-role="button">Show page "six"</a></p>        
+    <div class="navBox double">
+      <p><a href="#four" data-direction="reverse" data-role="button">Back to page "four"</a></p>     
+      <p><a href="#six" data-role="button">Show page "six"</a></p>        
+    </div>
   </div><!-- /content -->
   <div data-role="footer" data-theme="d">
     <h4>Page Footer</h4>
