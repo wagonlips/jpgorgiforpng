@@ -11,13 +11,11 @@
   .images { 
     float:left;
     width:370px;height:150px;
-    border:1px solid red;
     position:relative;
-   }
-  .imageBox {
-    width:750px;padding:0;
-    border:1px solid green;
-   }
+  }
+  .transparency .ui-content .imageBox .images {
+    background:transparent url('/content/images/background.png');
+  }
   .caption {position:absolute;left:0px;top:120px;}
   .navBox {clear:both;}
   .navBox.double p {width:45%;float:left;padding-right:38px;}
@@ -27,14 +25,14 @@
 </head> 
 <body> 
 <!-- Page -->
-<?php $img00 = array('jay-peg-landscape.jpg','gif-landscape.gif','ping-landscape.png','ping-landscape-fs8.png'); ?>
+<?php $img00 = array('image-w-text-jpg-80.jpg','image-w-text-gif-256.gif','image-w-text-png-8-256.png','image-w-text-png-24.png'); ?>
 <div data-role="page" id="one">
   <div data-role="header">
     <h1>Hi, I'm Jay.</h1>
   </div><!-- /header -->
   <div data-role="content" >    
     <p>Hi, my name is Jay Peg. I&rsquo;m a Web graphic and these are my friends Gif and Ping.</p>
-    <p>We can help your website look great, but you should know what our strengths and weaknesses are first.</p>
+    <p>We can help your website look great, but you should know our strengths and weaknesses first.</p>
     <div class="imageBox">
       <div class="images jpg"><?php iDims($img00[0]); iSize($img00[0]);?></div>
       <div class="images gif"><?php iDims($img00[1]); iSize($img00[1]);?></div>
@@ -51,12 +49,12 @@
 </div><!-- /page -->
 <?php $img01 = array('jay-peg-landscape.jpg','gif-landscape.gif','ping-landscape.png'); ?>
 <!-- Page -->
-<div data-role="page" id="two">
+<div data-role="page" id="two" class="transparency">
   <div data-role="header">
     <h1>Transparency</h1>
   </div><!-- /header -->
   <div data-role="content">      
-    <p>For instance, I can&rsquo;t do transparency, Gif can do it in a limited way, and Ping pretty much nails it.</p>
+    <p>For instance, I can&rsquo;t do transparency. Gif does it poorly. And Ping does it well. His 8-bit version has some limitations, but his 24-bit version does it perfectly.</p>
     <div class="imageBox">
       <div class="images jpg"><?php iDims($img01[0]); iSize($img01[0]);?></div>
       <div class="images gif"><?php iDims($img01[1]); iSize($img01[1]);?></div>
